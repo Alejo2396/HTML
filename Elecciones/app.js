@@ -1,4 +1,4 @@
-let candidatos = []
+let candidatos = [];
 let votos = [0, 0, 0, 0];
 localStorage.setItem("resultadovotos", JSON.stringify(votos));
 if (localStorage.resultadosvotos){
@@ -7,12 +7,8 @@ if (localStorage.resultadosvotos){
     votos = [0, 0, 0, 0]
     localStorage.setItem("resultadosvotos", JSON.stringify (votos))
 }
+obtenercandidatos();
 
-obtenercandidatos()
-/**
- * funcion que obtiene los candidatos
- *  desde un archivo JSON externo
- */
 function obtenercandidatos () {
     const url = "https://raw.githubusercontent.com/CesarMCuellarCha/apis/refs/heads/main/candidatos.json";
     fetch(url)
@@ -26,7 +22,7 @@ function obtenercandidatos () {
 }
 
 function mostrarcandidatos(){
-    const divcandidatos = document.querySelector("#candidatos")
+    const divcandidatos = document.querySelector("#candidatos");
     divcandidatos.innerHTML = " ";
 
     candidatos.forEach((candidato, index) => {
@@ -60,23 +56,48 @@ function mostrarcandidatos(){
                 if (result.isConfirmed) {
                     votos[index]++
                     localStorage.setItem("resultadosvotos", JSON.stringify(votos))
+
                 }
             });
-        })
-           
+
+        })    
         divBody.appendChild(foto);
         divcandidato.appendChild(divBody);
         
-        let divFooter = document.createElement("div")
-        divFooter.classList.add("card-footer")
-        let aprendizFooter = document.createElement("p")
+        let divFooter = document.createElement("div");
+        divFooter.classList.add("card-footer");
+        let aprendizFooter = document.createElement("p");
         aprendizFooter.innerHTML="<b>Aprendiz: </b>" + candidato.nombre + " " + candidato.apellido;
-        divFooter.appendChild(aprendizFooter)
-        let fichaFooter = document.createElement("p")
+        divFooter.appendChild(aprendizFooter);
+        let fichaFooter = document.createElement("p");
         fichaFooter.innerHTML = "<b>Ficha: </b> " + candidato.ficha;
-        divFooter.appendChild(fichaFooter)
-        divCandidato.appendChild(divFooter)
-        divCandidato.appendChild(divCandidato)
+        divFooter.appendChild(fichaFooter);
+        divcandidato.appendChild(divFooter);
         
     });
+}
+
+function obtenerdatosadministrador() {
+    let url = "https://raw.githubusercontent.com/CesarMCuellarCha/Elecciones/refs/heads/main/administrador.json";
+
+    const opciones = {
+        "method": "GET"
+    };
+
+    fetch(url, opciones)
+        .then(resultado => resultado.json())
+        .then(datos => {
+            administrador = datos;
+            console.log(administrador);
+        })
+        .catch(error => console.log("Error al obtener datos del administrador:", error));
+
+
+        const btnAbrir = document.querySelector("#btnAbrir");
+        btnAbrir.addEventListener("click", () => {
+            obtenerdatosadministrador();
+            let modalValidarAdministrador
+
+btnValidarAdministrador.addEventListener
+        });
 }
