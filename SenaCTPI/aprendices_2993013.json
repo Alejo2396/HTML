@@ -1,0 +1,86 @@
+[
+  {
+    "Tipo Documento": "CC",
+    "Número Documento": "1012345678",
+    "Nombre": "Andrés",
+    "Primer Apellido": "Ramírez",
+    "Segundo Apellido": "Guzmán",
+    "Estado": "Matriculado",
+    "Ficha": "2993013",
+    "Programa": "Análisis y Desarrollo de Software",
+    "Nivel de Formación": "Tecnólogo",
+    "Estado Ficha": "Activa"
+  },
+  {
+    "Tipo Documento": "TI",
+    "Número Documento": "1122334455",
+    "Nombre": "Laura",
+    "Primer Apellido": "Martínez",
+    "Segundo Apellido": "Rojas",
+    "Estado": "Matriculado",
+    "Ficha": "2993013",
+    "Programa": "Análisis y Desarrollo de Software",
+    "Nivel de Formación": "Tecnólogo",
+    "Estado Ficha": "Activa"
+  },
+  {
+    "Tipo Documento": "CC",
+    "Número Documento": "1029384756",
+    "Nombre": "Felipe",
+    "Primer Apellido": "Torres",
+    "Segundo Apellido": "Andrade",
+    "Estado": "Retiro Voluntario",
+    "Ficha": "2993013",
+    "Programa": "Análisis y Desarrollo de Software",
+    "Nivel de Formación": "Tecnólogo",
+    "Estado Ficha": "Activa"
+  },
+  {
+    "Tipo Documento": "CE",
+    "Número Documento": "2233445566",
+    "Nombre": "Mariana",
+    "Primer Apellido": "López",
+    "Segundo Apellido": "Páez",
+    "Estado": "Matriculado",
+    "Ficha": "2993013",
+    "Programa": "Análisis y Desarrollo de Software",
+    "Nivel de Formación": "Tecnólogo",
+    "Estado Ficha": "Activa"
+  },
+  {
+    "Tipo Documento": "CC",
+    "Número Documento": "1098765432",
+    "Nombre": "Camilo",
+    "Primer Apellido": "Gómez",
+    "Segundo Apellido": "Medina",
+    "Estado": "Matriculado",
+    "Ficha": "2993013",
+    "Programa": "Análisis y Desarrollo de Software",
+    "Nivel de Formación": "Tecnólogo",
+    "Estado Ficha": "Activa"
+  },
+  {
+    "Tipo Documento": "TI",
+    "Número Documento": "3344556677",
+    "Nombre": "Karol",
+    "Primer Apellido": "Hernández",
+    "Segundo Apellido": "Quintero",
+    "Estado": "Matriculado",
+    "Ficha": "2993013",
+    "Programa": "Análisis y Desarrollo de Software",
+    "Nivel de Formación": "Tecnólogo",
+    "Estado Ficha": "Activa"
+  },
+  {
+    "Tipo Documento": "CC",
+    "Número Documento": "1212121212",
+    "Nombre": "Juan David",
+    "Primer Apellido": "Castaño",
+    "Segundo Apellido": "Herrera",
+    "Estado": "Retiro Voluntario",
+    "Ficha": "2993013",
+    "Programa": "Análisis y Desarrollo de Software",
+    "Nivel de Formación": "Tecnólogo",
+    "Estado Ficha": "Activa"
+  }
+]

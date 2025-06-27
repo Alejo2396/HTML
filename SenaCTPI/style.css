@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.logo {
+  width: 80px;
+}
+.login-container {
+  width: 300px;
+  margin: 100px auto;
+  text-align: center;
+}
+.login-container input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+}
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.filtros {
+  margin: 20px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+tr.resaltado {
+  background-color: #ffe4e1;
+}
+#salirBtn {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f93a;
+  border: none;
+  cursor: pointer;
+}
+footer {
+  margin-top: 30px;
+  text-align: center;
+}

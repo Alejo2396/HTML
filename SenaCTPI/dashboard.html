@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Aprendices</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <img src="SenaCTPI/logoSena.png" alt="SENA" class="logo"/>
+    <h3>Usuario: <span id="nombreUsuario"></span></h3>
+  </header>
+
+  <section class="filtros">
+    <label for="fichaSelect">Seleccione Código Ficha:</label>
+    <select id="fichaSelect">
+      <option value="">2993013</option>
+    </select>
+
+    <label for="ProgramaSelect">Nombre Programa:</label>
+    <select id="ProgramaSelect">
+      <option value="">Análisis y Desarrollo de Software</option>
+    </select>
+  </section>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tipo Documento</th>
+        <th>Número Documento</th>
+        <th>Nombre</th>
+        <th>Primer Apellido</th>
+        <th>Segundo Apellido</th>
+        <th>Estado del Aprendiz</th>
+      </tr>
+    </thead>
+    <tbody id="tablaAprendices"></tbody>
+  </table>
+
+  <button id="salirBtn">Salir</button>
+
+  <footer>
+    <p><strong>Elaborado por:</strong> Alejandro Moreno<br/>
+    Tecnólogo en Análisis y Desarrollo de Software<br/>
+    <strong>Ficha</strong> 2993013</p>
+  </footer>
+
+  <script src="scripts/data.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
